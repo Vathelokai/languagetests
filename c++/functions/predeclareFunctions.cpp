@@ -2,6 +2,31 @@
 #include <iostream>
 #include <stdlib.h>
 
+// predeclare some functions
+void sayThingsVoid(int x);
+int sayThingsInt(int x);
+std::string sayThingsStdString(std::string y);
+
+// use functions in main
+int main()
+{
+	using namespace std;	
+
+	cout << "main() has started." << endl;
+	sayThingsVoid(5);
+	int x = sayThingsInt(6);
+	cout << "\t\tsayThingsInt() returned x = ";
+	cout << x << endl;
+	string y = sayThingsStdString("word");
+	cout << "\t\tsayThingsStdString() returned y = '";
+	cout << y;
+	cout << "'" << endl;
+	cout << "main() is ending." << endl;
+
+	return 0;
+}
+
+// actual function definitions
 void sayThingsVoid(int x)
 {
 	using namespace std;	
@@ -27,24 +52,4 @@ std::string sayThingsStdString(std::string y)
 	std::string x("text");
 	return x;
 }
-
-int main()
-{
-	using namespace std;	
-
-	cout << "main() has started." << endl;
-	sayThingsVoid(5);
-	int x = sayThingsInt(6);
-	cout << "\t\tsayThingsInt() returned x = ";
-	cout << x << endl;
-	string y = sayThingsStdString("word");
-	cout << "\t\tsayThingsStdString() returned y = '";
-	cout << y;
-	cout << "'" << endl;
-	cout << "main() is ending." << endl;
-
-	return 0;
-}
-
-// cheating to keep a git streak
 

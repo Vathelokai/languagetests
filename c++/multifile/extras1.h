@@ -1,6 +1,5 @@
-
-#include <iostream>
-#include <stdlib.h>
+#ifndef extras1_h
+#define extras1_h
 
 void sayThingsVoid(int x)
 {
@@ -28,23 +27,4 @@ std::string sayThingsStdString(std::string y)
 	return x;
 }
 
-int main()
-{
-	using namespace std;	
-
-	cout << "main() has started." << endl;
-	sayThingsVoid(5);
-	int x = sayThingsInt(6);
-	cout << "\t\tsayThingsInt() returned x = ";
-	cout << x << endl;
-	string y = sayThingsStdString("word");
-	cout << "\t\tsayThingsStdString() returned y = '";
-	cout << y;
-	cout << "'" << endl;
-	cout << "main() is ending." << endl;
-
-	return 0;
-}
-
-// cheating to keep a git streak
-
+#endif
