@@ -10,9 +10,9 @@ int main()
 
 	cout << "main() has started.\n" << endl;
 	cout << "Give me a number: ";
-	int x = readIn();
+	long x = readIn();
 	cout << "Give me another number: ";
-	int y = readIn();
+	long y = readIn();
 	writeOut(x*y);
 	cout << "\nmain() is ending." << endl;
 

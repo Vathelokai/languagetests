@@ -1,6 +1,6 @@
 #ifndef WRITEOUT_H
 #define WRITEOUT_H
 
-int writeOut(int x);
+int writeOut(long x);
 
 #endif

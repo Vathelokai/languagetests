@@ -2,7 +2,7 @@
 #include <iostream>
 #include <stdlib.h>
 
-void writeOut(int x)
+void writeOut(long x)
 {
 	using namespace std;	
 	cout << "Your two numbers multiplied are ";

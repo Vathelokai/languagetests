@@ -4,7 +4,7 @@
 int readIn()
 {
 	using namespace std;	
-	int x;	
+	long x;	
 	cin >> x;
 	return x;
 }
